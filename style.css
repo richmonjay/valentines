@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lemonada", serif;
+}
+
+body {
+    height: 100dvh;
+    background-color: #e8a6aa;
+}
+
+.css-valentine {
+    background-color: #e8a6aa;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.valentine-box {
+    background-color: white;
+    height: 30%;
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.fa-heart {
+    color: #a93d4e;
+    position: absolute;
+    font-size: 1.7rem;
+}
+
+.fa-heart1 {
+    left: 28%;
+    top: 38%;
+    transform: rotate(20deg);
+}
+
+.fa-heart2 {
+    left: 62%;
+    top: 43%;
+    transform: rotate(-20deg);
+}
+
+.upper-box, .lower-box {
+    height: 50%;
+}
+
+.upper-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+}
+
+.upper-box p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.lower-box {
+    margin: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.lower-box input {
+    height: 40px;
+    width: 40px;
+    
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.lower-box input[type="checkbox"] {
+    height: 40px;
+    width: 40px;
+    accent-color: green; 
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    appearance: none;
+    border: 2px solid #000; 
+    border-radius: 4px; 
+    background-color: white; 
+}
+
+.lower-box input[type="checkbox"]:checked {
+    background-color: white; 
+    position: relative;
+}
+
+.lower-box input[type="checkbox"]:checked::before {
+    content: '✔'; 
+    color: green; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem; 
+}
+
+.heart {
+    position: absolute;
+    font-size: 24px;
+    color: red;
+    animation: moveUp 5s linear infinite, fadeIn 1s ease-in-out;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
