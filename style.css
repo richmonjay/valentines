@@ -47,6 +47,18 @@ body {
     transform: rotate(-20deg);
 }
 
+.fa-heart3 {
+    left: 26%;
+    top: 49%;
+    transform: rotate(-20deg);
+}
+
+.fa-heart4 {
+    left: 67%;
+    top: 50%;
+    transform: rotate(-20deg);
+}
+
 .upper-box, .lower-box {
     height: 50%;
 }

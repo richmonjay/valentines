@@ -181,7 +181,7 @@ document.querySelectorAll('input[name="valentine"]').forEach((checkbox) => {
                         noCheckbox.checked = false;
                         yesCheckbox.checked = true;
                     }, 1000);
-                }, 500);
+                }, 5000);
             }
         });
     }
